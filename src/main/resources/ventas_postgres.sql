@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS ventas;
-CREATE DATABASE ventas;
+--DROP DATABASE IF EXISTS ventas;
+--CREATE DATABASE ventas;
 
 CREATE TABLE cliente (
                          id SERIAL PRIMARY KEY,
@@ -64,3 +64,15 @@ INSERT INTO pedido VALUES(13, 545.75, '2019-01-25', 6, 1);
 INSERT INTO pedido VALUES(14, 145.82, '2017-02-02', 6, 1);
 INSERT INTO pedido VALUES(15, 370.85, '2019-03-11', 1, 5);
 INSERT INTO pedido VALUES(16, 2389.23, '2019-03-11', 1, 5);
+
+
+-- SELECT pg_get_serial_sequence('"cliente"', 'id');
+-- ALTER SEQUENCE public.cliente_id_seq RESTART WITH 100;
+--
+--
+-- SELECT pg_get_serial_sequence('"comercial"', 'id');
+-- ALTER SEQUENCE public.comercial_id_seq RESTART WITH 100;
+--
+--
+-- SELECT pg_get_serial_sequence('"pedido"', 'id');
+-- ALTER SEQUENCE public.pedido_id_seq RESTART WITH 100;
